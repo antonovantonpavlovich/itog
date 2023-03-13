@@ -25,6 +25,20 @@ namespace ConsoleApp1
             }
             Console.WriteLine();
 
+            
+            string[] mas_3 = new string[n_3];
+            Console.Write("Сформированный массив из строк, длина которых не больше трех символов: ");
+            for (int i = 0; i < n; i++)
+            {
+                if (mas[i].Length <= 3)
+                {
+                    mas_3[index] = mas[i];
+                    Console.Write(mas_3[index] + " ");
+                    index++;
+                }
+                
+            }
+
         }
     }
 }
